@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Furry Site</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="Logotipo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Desenhos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#local">Animações</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Pesquisar"
+            />
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-5">
+      <!-- Carousel -->
+      <div
+        id="FurryeCarousel"
+        class="carousel carousel-light slide mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#FurryeCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#FurryeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#FurryeCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              src="assets/images/banner-01.png"
+              class="d-block w-100"
+              alt="Grãos de furry"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Uma comunidade que vem crescendo cada vez mais</h5>
+              <p>
+                Você vai conhecer pessoas incriveis e fazer muitas amizades
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="assets/images/banner-02.png"
+              class="d-block w-100"
+              alt="furry"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Furry Fandom</h5>
+              <p>
+                Furry é um estilo de subcultura relacionada a personagens animais ficcionais que apresentam características antropomórficas, assim apresentando personalidade e características humanas
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner-03.png"
+              class="d-block w-100"
+              alt="furry"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lembre-se Furry e muito mais do que acha</h5>
+              <p>
+                As pessoas que se interessam por essa se reúnem em um grupo de fãs, chamado de furry fandom. Um participante desse grupo é chamado de furry. No fandom são exercidas atividades culturais que utilizam o conceito de personagens antropomórficos, podendo ser de qualquer gênero, como literárias, visuais e artesanatos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#FurryeCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#FurryeCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Quote -->
+      <figure class="m-5">
+        <blockquote class="blockquote" cite='https://www.pensador.com/autor/beastars/'>
+          <h3 class="fw-lighter fst-italic text-center mb-0">
+            "Aqueles que conseguem ser vitoriosos nesse mundo são os que conseguem exibir sem pudor
+             seus instintos e, assim, seguir vivendo.."
+          </h3>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+          Beastar
+        </figcaption>
+      </figure>
+
+      <!-- About -->
+      <section id="about" class="container">
+        <div class="row">
+          <div class="col-lg-6 col-mb-12 mb-5">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/images/bna.jpeg"
+
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">BNA</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      Uma mistura de emoção e fofura que jamais vai esquecer, te garanto.
+                    </h6>
+                    <p class="card-text">
+                      A História acompanha Michiru, uma garota humana
+                       que é transformada em uma meio-animal sem qualquer explicação.
+                       Depois disso, Michiru foge e se refugia em uma área especial da
+                       cidade chamada "Anima City", onde encontra um meio-lobo que odeia humanos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-mb-12 mb-5">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/images/beastar.jpg"
+
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Beastar</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      Vamos junto assistir essa obra de arte
+                      onde passa diversas lições importante e aprendizados
+                      junto de uma historia maravilhosa!!
+
+                    </h6>
+                    <p class="card-text">
+                      Em um mundo onde convivem animais de todo tipo, um lobo manso começa a descobrir
+                      seus instintos predatórios justamente quando acontece um assassinato na escola.
+                      Assista o quanto quiser. Baseada na multipremiada série de mangá de Paru Itagaki, que
+                      conquistou o prêmio Manga Taisho em 2018.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="espresso-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#espresso"
+              type="button"
+              role="tab"
+              aria-controls="espresso"
+              aria-selected="true"
+            >
+              Furry
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <!-- Furry -->
+          <div
+            class="tab-pane fade show active"
+            id="espresso"
+            role="tabpanel"
+            aria-labelledby="espresso-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/bna.png"
+
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Brand New Animal(BNA)</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/beastar.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Beastars O Lobo Bom</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/kidwolf.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Crianças Lobos (2012)</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/gato.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Olhos De Gato</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/fumetsu.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Fumetsu no Anata e (2021)</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/okami.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ookami To Koushinryou (2008)</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/shield.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">The Rising of the Shield Hero (2019)</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/aggretsuko.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Aggretsuko</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu-item">
+                  <img
+                    src="assets/images/desenho/neko.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Reino dos gatos</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      <!-- Local -->
+      <section id="local" class="container text-center mt-5">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Quero conhecer o Furry Site
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Estamos te esperando!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Te esperamos na Rua Furry furrie, n. 333 - Jd. Abreu furry |
+                  Anima City/EUA
+                </p>
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe
+                      style="width: 100%"
+                      height="500"
+                      id="gmap_canvas"
+                      src="iwloc=&output=embed"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark p-5 mt-5">
+      <img class="" width="80" src="assets/images/logo.png" alt="..." />
+      <p class="mt-2 mb-0 text-light fw-bold">
+        Furry Site | Te apresentando esse novo mundo
+      </p>
+      <p class="text-light">(99) 98111-1111</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
